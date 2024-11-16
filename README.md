@@ -1,8 +1,16 @@
-# React + Vite
+# a11y-chart-react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a demo project to show accessibility charts and deploy `vite+react+react-router-dom` on github-pages.
+[Page Link](https://yo7ee.github.io/a11y-chart-react)
 
-Currently, two official plugins are available:
+## deploy on github pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Set base url in `vite.config.js`.
+- Set basename in `router.jsx`.
+- Install `gh-pages` and add `"predeploy": "npm run build"`, `"deploy": "gh-pages -d dist"` in `package.json`.
+- Run the predeploy and deploy script:
+  ```
+  pnpm run predeploy // to build the project
+  pnpm run deploy
+  ```
+- Set the resource folder by [offical tutorial](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). Remember to choose `gh-pages` branch instead of `main`, if you want to deploy the resouce which is not in the root.

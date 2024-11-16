@@ -5,7 +5,7 @@ import LineChart from "../component/LineChart";
 import PieChart from "../component/PieChart";
 import MapChart from "../component/MapChart";
 
-const router = createBrowserRouter([
+const routes = [
 	{
 		path: "/",
 		element: <App />,
@@ -25,6 +25,13 @@ const router = createBrowserRouter([
 			},
 		],
 	},
-]);
+];
+
+const router = createBrowserRouter(routes, {
+	basename: "/a11y-chart-react",
+	future: {
+		v7_relativeSplatPath: true,
+	},
+});
 
 export default router;

@@ -59,8 +59,6 @@ const options = {
 	],
 };
 
-const LineChart = () => (
-	<HighchartsReact highcharts={Highcharts} options={options} />
-);
+const LineChart = () => <Chart options={options} />;
 
 export default LineChart;

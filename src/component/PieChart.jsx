@@ -1,5 +1,4 @@
-import Highcharts from "highcharts";
-import HighchartsReact from "highcharts-react-official";
+import Chart from "./common/Chart";
 
 const options = {
 	chart: {
@@ -73,8 +72,6 @@ const options = {
 	],
 };
 
-const PieChart = () => (
-	<HighchartsReact highcharts={Highcharts} options={options} />
-);
+const PieChart = () => <Chart options={options} />;
 
 export default PieChart;

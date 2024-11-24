@@ -1,15 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-import Highcharts from "highcharts";
-import exporting from "highcharts/modules/exporting";
-import exportData from "highcharts/modules/export-data";
-import MapInit from "highcharts/modules/map";
-import AccessibilityInit from "highcharts/modules/accessibility";
-import HighchartsReact from "highcharts-react-official";
-
-// exporting(Highcharts);
-// exportData(Highcharts);
-MapInit(Highcharts);
-AccessibilityInit(Highcharts);
+import Chart from "./common/Chart";
 
 const data = [
 	["Atlanta", "USA", "1996", 33.75, -84.38, 7, 2, 2, 3],
@@ -127,11 +116,7 @@ export default function MapChart() {
 	};
 	return (
 		<>
-			<HighchartsReact
-				highcharts={Highcharts}
-				options={options}
-				constructorType={"mapChart"}
-			/>
+			<Chart options={options} constructorType={"mapChart"} />
 		</>
 	);
 }

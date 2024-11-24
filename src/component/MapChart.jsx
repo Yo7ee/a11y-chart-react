@@ -1,13 +1,14 @@
+import { useEffect, useState } from "react";
 import Chart from "./common/Chart";
 
 const data = [
-	["Atlanta", "USA", "1996", 33.75, -84.38, 7, 2, 2, 3],
-	["Sydney", "Australia", "2000", -33.87, 151.2, 10, 4, 3, 3],
-	["Athens", "Greece", "2004", 38, 23.72, 6, 5, 0, 1],
-	["Beijing", "China", "2008", 39.92, 116.38, 9, 3, 5, 1],
-	["London", "Great Britain", "2012", 51.5, -0.12, 4, 2, 1, 1],
-	["Rio de Janeiro", "Brazil", "2016", -22.91, -43.2, 4, 0, 0, 4],
-	["Tokyo", "Japan", "2020", 35.69, 139.69, 8, 4, 2, 2],
+	["亞特蘭大", "美國", "1996", 33.75, -84.38, 7, 0, 1, 0],
+	["雪梨", "澳大利亞", "2000", -33.87, 151.2, 10, 0, 1, 4],
+	["雅典", "希臘", "2004", 38, 23.72, 6, 2, 2, 1],
+	["北京", "中國", "2008", 39.92, 116.38, 9, 1, 1, 2],
+	["倫敦", "英國", "2012", 51.5, -0.12, 4, 1, 0, 1],
+	["里約熱內盧", "巴西", "2016", -22.91, -43.2, 4, 1, 0, 2],
+	["東京", "日本", "2020", 35.69, 139.69, 8, 2, 4, 6],
 ];
 
 export default function MapChart() {
@@ -106,8 +107,8 @@ export default function MapChart() {
 					point: {
 						valueDescriptionFormat:
 							"{point.city}, {point.country}, " +
-							"{point.year}. Total medals: {point.z}. Gold: " +
-							"{point.gold}, silver: {point.silver}, bronze: " +
+							"{point.year}. 總奪牌數: {point.z}. 金牌: " +
+							"{point.gold}, 銀牌: {point.silver}, 銅牌: " +
 							"{point.bronze}.",
 					},
 				},

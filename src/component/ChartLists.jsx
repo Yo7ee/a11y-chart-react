@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Container from "./common/Container";
+
 const lists = [
 	{
 		path: "LineChart",
@@ -12,6 +12,14 @@ const lists = [
 	{
 		path: "MapChart",
 		displayName: "MapChart",
+	},
+	{
+		path: "OrganizeChart",
+		displayName: "OrganizeChart",
+	},
+	{
+		path: "StackedBarChart",
+		displayName: "StackedBarChart",
 	},
 ];
 

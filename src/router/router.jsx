@@ -4,6 +4,8 @@ import ChartLists from "../component/ChartLists";
 import LineChart from "../component/LineChart";
 import PieChart from "../component/PieChart";
 import MapChart from "../component/MapChart";
+import OrgazizeChart from "../component/OrganizeChart";
+import StackedBarChart from "../component/StackedBarChart";
 
 const routes = [
 	{
@@ -22,6 +24,14 @@ const routes = [
 			{
 				path: "MapChart",
 				element: <MapChart />,
+			},
+			{
+				path: "OrganizeChart",
+				element: <OrgazizeChart />,
+			},
+			{
+				path: "StackedBarChart",
+				element: <StackedBarChart />,
 			},
 		],
 	},

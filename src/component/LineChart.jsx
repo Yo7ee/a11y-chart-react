@@ -1,5 +1,4 @@
-import Highcharts from "highcharts";
-import HighchartsReact from "highcharts-react-official";
+import Chart from "./common/Chart";
 
 const options = {
 	chart: {
@@ -15,6 +14,9 @@ const options = {
 			'target="_blank">交通部中央氣象署</a>',
 	},
 	xAxis: {
+		title: {
+			text: "月份",
+		},
 		categories: [
 			"一月",
 			"二月",
